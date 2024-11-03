@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="stylesheet" href="/static/details.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/details.js"></script>
+</head>
+<body>
+    <form id="detailsForm">
+        <section class="container">
+            <center>
+                <label for="regno" class="font">Enter Register Number:</label>
+                <input name="regno" id="regno" type="text" required>
+                <br><br><br>
+                <button type="button" id="getInfoBtn">Get Info</button>
+                <br><br>
+                <div id="studentDetails" class="student-details" style="display: none;">
+                    <p><strong>Roll No:</strong> <span id="rollNo"></span></p>
+                    <p><strong>Name:</strong> <span id="name"></span></p>
+                    <p><strong id="companyLabel">Company Employed:</strong> <span id="company"></span></p>
+                    <p><strong>Campus Status:</strong> <span id="campusStatus"></span></p>
+                    <p><strong>LPA:</strong> <span id="lpa"></span></p>
+                    <p><strong>CGPA:</strong> <span id="cgpa"></span></p>
+                    <p><strong>Batch:</strong> <span id="batch"></span></p>
+                </div>
+                <p id="errorMessage" style="color:red;"></p>
+            </center>
+        </section>
+    </form>
+
+    <script src="/static/details.js"></script>
+</body>
+</html>

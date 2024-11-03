@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button {
+            margin-top: 3%;
+            padding: 12px 20px;
+            background-color: #4ba9ff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background-color: #357ab9;
+            transform: scale(1.05);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 100%;
+            max-width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-space {
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-space img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover .image-space img {
+            transform: scale(1.1);
+        }
+
+        .company-name {
+            padding: 12px;
+            font-size: 18px;
+            color: #333;
+            background-color: white;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 15px;
+            }
+            
+            .card {
+                max-width: 180px;
+            }
+
+            .image-space {
+                height: 150px;
+            }
+
+            .company-name {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            button {
+                width: 80px;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+            
+            .company-name {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <a href="/zoho" style="text-decoration: none;">
+            <div class="image-space">
+                <img src="/static/images/zoho.png" alt="ZOHO">
+            </div>
+            <h3 class="company-name">ZOHO</h3>
+            </a>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/sahaj-ai-logo.png" alt="Sahaj AI">
+            </div>
+            <h3 class="company-name">Sahaj AI</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/mr-cooper-logo.png" alt="Mr. Cooper">
+            </div>
+            <h3 class="company-name">Mr. Cooper</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/kaar-technologies-logo.png" alt="Kaar Technologies">
+            </div>
+            <h3 class="company-name">Kaar Technologies</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/codingmart-logo.png" alt="Codingmart">
+            </div>
+            <h3 class="company-name">Codingmart</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/jman-group-logo.png" alt="JMAN Group">
+            </div>
+            <h3 class="company-name">JMAN Group</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/happiest-minds-logo.png" alt="Happiest Minds">
+            </div>
+            <h3 class="company-name">Happiest Minds</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/guvi-logo.png" alt="Guvi">
+            </div>
+            <h3 class="company-name">Guvi</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/rootquotient-logo.png" alt="Rootquotient">
+            </div>
+            <h3 class="company-name">Rootquotient</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/tejas-logo.png" alt="Tejas">
+            </div>
+            <h3 class="company-name">Tejas</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/acies-global-logo.png" alt="Acies Global">
+            </div>
+            <h3 class="company-name">Acies Global</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/bounteous-logo.png" alt="Bounteous">
+            </div>
+            <h3 class="company-name">Bounteous</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/tata-elxsi-logo.png" alt="Tata Elxsi">
+            </div>
+            <h3 class="company-name">Tata Elxsi</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/tcs-pega-logo.png" alt="TCS Pega">
+            </div>
+            <h3 class="company-name">TCS Pega</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/tcs-digital-pega-logo.png" alt="TCS Digital (Pega)">
+            </div>
+            <h3 class="company-name">TCS Digital (Pega)</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/ilink-logo.png" alt="iLink">
+            </div>
+            <h3 class="company-name">iLink</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/logitech-logo.png" alt="Logitech">
+            </div>
+            <h3 class="company-name">Logitech</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/accenture-logo.png" alt="Accenture">
+            </div>
+            <h3 class="company-name">Accenture</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/lt-logo.png" alt="L&T">
+            </div>
+            <h3 class="company-name">L&T</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/worldline-logo.png" alt="Worldline">
+            </div>
+            <h3 class="company-name">Worldline</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/verizon-pega-logo.png" alt="Verizon Pega">
+            </div>
+            <h3 class="company-name">Verizon Pega</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/renault-nissan-logo.png" alt="Renault Nissan">
+            </div>
+            <h3 class="company-name">Renault Nissan</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/presidio-logo.png" alt="Presidio">
+            </div>
+            <h3 class="company-name">Presidio</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/sutherland-logo.png" alt="Sutherland">
+            </div>
+            <h3 class="company-name">Sutherland</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/raptee-logo.png" alt="Raptee">
+            </div>
+            <h3 class="company-name">Raptee</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/cams-logo.png" alt="CAMS">
+            </div>
+            <h3 class="company-name">CAMS</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/ford-pega-logo.png" alt="Ford (Pega)">
+            </div>
+            <h3 class="company-name">Ford (Pega)</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/pwc-logo.png" alt="PwC">
+            </div>
+            <h3 class="company-name">PwC</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/securin-logo.png" alt="Securin">
+            </div>
+            <h3 class="company-name">Securin</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/skills-dunia-logo.png" alt="Skills Dunia">
+            </div>
+            <h3 class="company-name">Skills Dunia</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/ucal-logo.png" alt="UCAL">
+            </div>
+            <h3 class="company-name">UCAL</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/gigamon-logo.png" alt="Gigamon">
+            </div>
+            <h3 class="company-name">Gigamon</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/trimble-logo.png" alt="Trimble">
+            </div>
+            <h3 class="company-name">Trimble</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/epikindifi-logo.png" alt="EPIKInDiFi">
+            </div>
+            <h3 class="company-name">EPIKInDiFi</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/acmegrade-logo.png" alt="Acmegrade">
+            </div>
+            <h3 class="company-name">Acmegrade</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/carecentra-logo.png" alt="CareCentra">
+            </div>
+            <h3 class="company-name">CareCentra</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/redington-logo.png" alt="Redington">
+            </div>
+            <h3 class="company-name">Redington</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/infosys-logo.png" alt="Infosys">
+            </div>
+            <h3 class="company-name">Infosys</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/tata-communications-logo.png" alt="Tata Communications">
+            </div>
+            <h3 class="company-name">Tata Communications</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/spiral-up-logo.png" alt="Spiral Up">
+            </div>
+            <h3 class="company-name">Spiral Up</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/capgemini-logo.png" alt="Capgemini">
+            </div>
+            <h3 class="company-name">Capgemini</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/mobile-tutor-logo.png" alt="Mobile Tutor">
+            </div>
+            <h3 class="company-name">Mobile Tutor</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/cognizant-logo.png" alt="Cognizant">
+            </div>
+            <h3 class="company-name">Cognizant</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/tcs-prime-logo.png" alt="TCS Prime">
+            </div>
+            <h3 class="company-name">TCS Prime</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/tcs-ninja-logo.png" alt="TCS Ninja">
+            </div>
+            <h3 class="company-name">TCS Ninja</h3>
+        </div>
+
+        <div class="card">
+            <div class="image-space">
+                <img src="images/multicoreware-logo.png" alt="MulticoreWare">
+            </div>
+            <h3 class="company-name">MulticoreWare</h3>
+        </div>
+        <br>
+    </div>
+
+    <a href="/"><button>Back</button></a>
+</body>
+</html>

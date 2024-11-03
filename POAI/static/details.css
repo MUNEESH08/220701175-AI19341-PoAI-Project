@@ -1,0 +1,88 @@
+body {
+    background-color: #f0f0f0; /* Light background for better contrast */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.font {
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: #333; /* Slightly darkened color for better readability */
+}
+
+input {
+    margin-top: 2%;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    font-size: x-large;
+    padding: 10px 15px;
+    margin-bottom: 5%;
+    width: 220px; /* Set fixed width for 9 digits */
+    text-align: center; /* Center-align the text inside input */
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-bottom: 2px solid #4CAF50; /* Highlight the input field on focus */
+}
+
+button {
+    font-size: x-large;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    transform: scale(1.05); /* Button grows slightly on hover */
+}
+
+.container {
+    background-color: white;
+    margin: 10% auto;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+    max-width: 500px;
+    text-align: center;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column;
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+}
+
+.student-details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+p {
+    font-size: large;
+    margin: 5px 0;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .font {
+        font-size: large; /* Adjust font size for smaller screens */
+    }
+
+    input {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .container {
+        margin-top: 20%; /* Adjust margin for smaller screens */
+        padding: 10%; /* Adjust padding for smaller screens */
+    }
+}
